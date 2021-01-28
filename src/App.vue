@@ -67,9 +67,10 @@
 		padding: 0;
 		margin: 0;
 	}
-	body {
+	* {
 		margin: 0;
 		font-family: Arial, sans-serif;
+		font-size: 18px
 	}
 	#app {
 		height: 100vh;
@@ -84,7 +85,7 @@
 		display: flex;
 		flex-wrap: wrap;
 
-		width: 80%;
+		width: 40%;
 	}
 
 	.axis {
@@ -131,6 +132,13 @@
 		padding: var(--content-padding);
 	}
 
+	.info h3 {
+		margin-bottom: .5rem;
+	}
+	.info p {
+		line-height: 1.4rem;
+	}
+
 	.imp-urg {
 		background-color: var(--imp-urg-bgc);
 	}
@@ -142,5 +150,24 @@
 	}
 	.not-imp-not-urg {
 		background-color: var(--not-imp-not-urg-bgc);
+	}
+
+	@media (max-width: 1600px) {
+		* {
+			font-size: 16px;
+		}
+	}
+	@media (max-width: 1600px) {
+		* {
+			font-size: 14px;
+		}
+	}
+	@media (max-width: 1200px) {
+		* {
+			font-size: 12px;
+		}
+		.info p {
+			line-height: 1.2rem;
+		}
 	}
 </style>
